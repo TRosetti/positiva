@@ -1,0 +1,155 @@
+.conheca-positiva{
+    height: 100vh;
+    color: #fff;
+    background: url('../images/img2.png') ;
+
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow-x: hidden;
+    overflow: hidden;
+}
+
+
+.conheca-positiva .elemento01{
+    position: absolute;
+    bottom: 0;
+    left: -250px;
+    max-width: 600px;
+    width: 100%;
+    z-index: 1;
+    transform: rotate(-60deg);
+}
+
+.conheca-positiva .elemento02{
+    position: absolute;
+    top: 50px;
+    right: -250px;
+    max-width: 600px;
+    width: 100%;
+    transform: rotate(-60deg);
+}
+
+
+
+.conheca-positiva .container{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.conheca-positiva .titulo h1{
+    width: fit-content;
+    background: #04C011;
+    color: #FFF;
+    font-weight: 300;
+    margin: 10px 0;
+    padding: 10px 25px;
+    font-size: 50px;
+}
+
+.conheca-positiva .titulo h2{
+    width: fit-content;
+    background: #04C011;
+    color: #FFF;
+    font-weight: 300;
+    margin: 10px 0;
+    padding: 10px 25px;
+    font-size: 35px;
+}
+
+.conheca-positiva p{
+    font-size: 30px;
+    margin: 20px;
+    max-width: 100%;
+    text-align: center;
+}
+
+
+@media (max-width: 800px){
+
+   
+    .conheca-positiva .elemento01{
+        position: absolute;
+        bottom: 0;
+        left: -150px;
+        max-width: 400px;
+        width: 100%;
+        z-index: 1;
+        transform: rotate(-60deg);
+    }
+
+    .conheca-positiva .elemento02{
+        position: absolute;
+        top: 50px;
+        right: -150px;
+        max-width: 400px;
+        width: 100%;
+        transform: rotate(-60deg);
+    }
+    
+}
+
+@media (max-width: 700px){
+
+   
+    .conheca-positiva .desktop{
+        display: none;
+    }
+    .conheca-positiva .mobile{
+        display: block;
+       
+    }
+
+    .conheca-positiva .titulo h1{
+        
+        font-size: 40px;
+    }
+    
+    .conheca-positiva .titulo h2{
+        
+        font-size: 30px;
+    }
+    .conheca-positiva p{
+        display: none;
+    }
+    
+
+    .conheca-positiva .container{
+        justify-content: end;
+        margin-bottom: 100px;
+    }
+}
+
+@media (max-width: 550px){
+
+   
+  
+    .conheca-positiva .titulo h1{
+        font-size: 30px;
+    }
+    
+    .conheca-positiva .titulo h2{   
+        font-size: 20px;
+    }
+   
+}
+
+@media (max-width: 450px){
+
+   
+  
+    .conheca-positiva .titulo h1{
+        font-size: 23px;
+    }
+    
+    .conheca-positiva .titulo h2{   
+        font-size: 18px;
+    }
+   
+}

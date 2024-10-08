@@ -1,0 +1,221 @@
+.media .container-cta{
+    padding: 0 20px;
+}
+
+.media .titulo{
+    margin-top: 100px;
+    margin-bottom: 80px;
+}
+.media .titulo h1{
+   
+    transition: all 1s ease;
+}
+
+.media .cta-button{
+    margin: auto;
+}
+
+/*  Swiper */
+
+.swiper-slide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.swiper-slide video{
+    border-radius: 10px;
+    width: 100%;
+
+}
+
+.swiper{
+    overflow: hidden;
+    width: 90%;
+    margin: 50px auto;
+    padding-bottom: 40px;
+}
+.swiper-pagination-bullet{
+    background-color: #013b05;
+    width: 15px;
+    height: 15px;
+}
+
+.swiper-pagination-bullet-active{
+    width: 25px;
+    border-radius: 10px;
+}
+
+
+
+.media-wrapper img{
+/*    
+    max-width: 307px; */
+    width: 100%;
+
+    object-fit: cover;
+}
+
+
+
+
+/* Contato */
+
+.subtitulo{
+    padding: 20px;
+}
+.subtitulo p{
+    font-size: 23px;
+}
+
+form {
+    width: 100%;
+    padding: 10px;
+}
+
+form input{
+    border: 1px solid #343434;
+    width: 100%;
+    height: 70px;
+    margin: 5px 0;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+form textarea{
+    border: 1px solid #343434;
+    width: 100%;
+    height: 150px;
+    margin: 5px 0;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+
+form input[type=submit]{
+    width: 50%;
+    background-color: #04C011;
+    border: none;
+    color: white;
+    font-size: 30px;
+    transition: all 1s ease;
+}
+
+form input:focus{
+    border: 1px solid #04C011;
+    outline: 0;
+    background-color: #04c0111f;
+}
+
+form textarea:focus{
+    border: 1px solid #04C011;
+    outline: 0;
+    background-color: #04c0111f;
+
+}
+
+
+
+form input:invalid:focus{
+    border: 1px solid #c00404;
+    outline: 0;
+    background-color: #c004041f;
+}
+form textarea:invalid:focus{
+    border: 1px solid #c00404;
+    outline: 0;
+    background-color: #c004041f;
+}
+
+
+form input[type=submit]:hover{
+    background-color: #055f0b;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 700px){
+
+    .media .titulo h1{
+       font-size: 40px;
+       transition: all 1s ease;
+    }
+    .media .subtitulo p{
+        /* text-align: center; */
+        font-size: 18px;
+        transition: all 1s ease;
+    }
+
+    .media .desktop{
+        display: none;
+    }
+    .media .mobile{
+        display: block;
+    }
+
+    .media .cta-button.mobile{
+        text-align: center;
+        /* font-size: 20px; */
+        transition: 2s;
+        max-width: 480px;
+        width: 100%;
+        padding: 30px;
+        margin-top: 50px;
+        border-radius: 10px;
+        position: relative;
+    }
+    .media .cta-button.mobile::after{
+        content: '';
+        position: absolute;
+        bottom: -15px;
+        left: 45%;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #04C011;
+        animation: animacao-cta 5s linear infinite;
+    }
+
+    .swiper{
+        overflow: hidden;
+        width: 99%;
+        /* margin-left: 20px; */
+      
+    }
+}
+
+
+@media (max-width: 533px){
+    .media .titulo h1{
+        text-align: center;
+        font-size: 30px;
+        transition: all 1s ease;
+     }
+     .media .subtitulo p{
+        text-align: center;
+        font-size: 15px;
+        transition: all 1s ease;
+    }
+    form input[type=submit]{
+        width: 100%;
+        transition: all 0.5s ease;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 448px){
+    .media .titulo h1{
+        text-align: center;
+        font-size: 23px;
+        transition: all 1s ease;
+     }
+     .media .subtitulo p{
+        text-align: center;
+        font-size: 13px;
+        transition: all 1s ease;
+    }
+}
+
